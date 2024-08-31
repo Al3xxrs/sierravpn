@@ -1,9 +1,4 @@
-import { BotMessageSquare } from "lucide-react";
-import { BatteryCharging } from "lucide-react";
-import { Fingerprint } from "lucide-react";
-import { ShieldHalf } from "lucide-react";
-import { PlugZap } from "lucide-react";
-import { GlobeLock } from "lucide-react";
+import { TabletSmartphone, Mails, Fingerprint, MailWarning, GlobeLock, ShieldHalf } from "lucide-react";
 
 import user1 from "../assets/profile-pictures/user1.jpg";
 import user2 from "../assets/profile-pictures/user2.jpg";
@@ -13,166 +8,157 @@ import user5 from "../assets/profile-pictures/user5.jpg";
 import user6 from "../assets/profile-pictures/user6.jpg";
 
 export const navItems = [
-  { label: "Features", href: "#" },
-  { label: "Workflow", href: "#" },
-  { label: "Pricing", href: "#" },
-  { label: "Testimonials", href: "#" },
+    { label: "Features", href: "#features" },
+    { label: "Advantages", href: "#advantages" },
+    { label: "Pricing", href: "#pricing" },
+    { label: "Testimonials", href: "#testimonials" },
 ];
 
 export const testimonials = [
-  {
-    user: "John Doe",
-    company: "Stellar Solutions",
-    image: user1,
-    text: "I am extremely satisfied with the services provided. The team was responsive, professional, and delivered results beyond my expectations.",
-  },
-  {
-    user: "Jane Smith",
-    company: "Blue Horizon Technologies",
-    image: user2,
-    text: "I couldn't be happier with the outcome of our project. The team's creativity and problem-solving skills were instrumental in bringing our vision to life",
-  },
-  {
-    user: "David Johnson",
-    company: "Quantum Innovations",
-    image: user3,
-    text: "Working with this company was a pleasure. Their attention to detail and commitment to excellence are commendable. I would highly recommend them to anyone looking for top-notch service.",
-  },
-  {
-    user: "Ronee Brown",
-    company: "Fusion Dynamics",
-    image: user4,
-    text: "Working with the team at XYZ Company was a game-changer for our project. Their attention to detail and innovative solutions helped us achieve our goals faster than we thought possible. We are grateful for their expertise and professionalism!",
-  },
-  {
-    user: "Michael Wilson",
-    company: "Visionary Creations",
-    image: user5,
-    text: "I am amazed by the level of professionalism and dedication shown by the team. They were able to exceed our expectations and deliver outstanding results.",
-  },
-  {
-    user: "Emily Davis",
-    company: "Synergy Systems",
-    image: user6,
-    text: "The team went above and beyond to ensure our project was a success. Their expertise and dedication are unmatched. I look forward to working with them again in the future.",
-  },
+    {
+        user: "Liam Borsch",
+        company: "Vexon Techonologies",
+        image: user1,
+        text: "SierraVPN provides exceptional speed and security with its network of 100 servers. Whether I'm streaming or working remotely, it never lets me down. The encryption is top-notch, giving me peace of mind about my online privacy. Highly recommended!",
+    },
+    {
+        user: "Vanessa Brown",
+        company: "Space Programs",
+        image: user2,
+        text: "With SierraVPN, accessing content from around the world is such a breeze. Its extensive server list means I can always find a fast and reliable connection. The privacy features are absolutely impressive, and the performance is consistently excellent.",
+    },
+    {
+        user: "Luke White",
+        company: "Next Level Solutions",
+        image: user3,
+        text: "I've been using SierraVPN for a few months, and I'm impressed with its reliability. The connection speed is great for both streaming and work, and the encryption ensures my data is secure. A solid choice for anyone needing a dependable VPN.",
+    },
+    {
+        user: "Beijim Kolf",
+        company: "The Games Company",
+        image: user4,
+        text: "SierraVPN excels in both privacy and performance. Its 100 servers offer diverse options for global content access, and the strong encryption keeps my information safe. Perfect for anyone looking for a secure and speedy VPN service.",
+    },
+    {
+        user: "Kevin Hinkel",
+        company: "Higher Routes",
+        image: user5,
+        text: "SierraVPN is fantastic for anyone who streams content regularly. The fast speeds and reliable connections make for smooth viewing experiences, and the encryption provides a secure browsing environment. A top contender in the VPN market.",
+    },
+    {
+        user: "Jennifer Lowell",
+        company: "Synergy Systems",
+        image: user6,
+        text: "I appreciate how SierraVPN combines efficiency with strong security features. The extensive server network ensures I can always connect quickly, and the encryption protects my data effectively. A great VPN for both everyday use and specialized needs.",
+    },
 ];
 
 export const features = [
-  {
-    icon: <BotMessageSquare />,
-    text: "Drag-and-Drop Interface",
-    description:
-      "Easily design and arrange your VR environments with a user-friendly drag-and-drop interface.",
-  },
-  {
-    icon: <Fingerprint />,
-    text: "Multi-Platform Compatibility",
-    description:
-      "Build VR applications that run seamlessly across multiple platforms, including mobile, desktop, and VR headsets.",
-  },
-  {
-    icon: <ShieldHalf />,
-    text: "Built-in Templates",
-    description:
-      "Jumpstart your VR projects with a variety of built-in templates for different types of applications and environments.",
-  },
-  {
-    icon: <BatteryCharging />,
-    text: "Real-Time Preview",
-    description:
-      "Preview your VR application in real-time as you make changes, allowing for quick iterations and adjustments.",
-  },
-  {
-    icon: <PlugZap />,
-    text: "Collaboration Tools",
-    description:
-      "Work together with your team in real-time on VR projects, enabling seamless collaboration and idea sharing.",
-  },
-  {
-    icon: <GlobeLock />,
-    text: "Analytics Dashboard",
-    description:
-      "Gain valuable insights into user interactions and behavior within your VR applications with an integrated analytics dashboard.",
-  },
+    {
+        icon: <Fingerprint />,
+        text: "Ad Blocker",
+        description: "Block all ad banners, pop-ups, and videos, so you get a more streamlined and less cluttered browsing experience.",
+    },
+    {
+        icon: <ShieldHalf />,
+        text: "24/7 Virus Protection",
+        description:
+            "Enjoy around-the-clock antivirus protection with our regularly updated database (every 3 hours!). Get faster scanning results and avoid incorrect detections by choosing which files and folders to scan.",
+    },
+    {
+        icon: <Mails />,
+        text: "Masked email generator",
+        description:
+            "Let Alternative ID create an email address for you. Use it to secure your real email address and avoid getting spam & annoying marketing subscriptions in your inbox.",
+    },
+    {
+        icon: <MailWarning />,
+        text: "Real-time email breach alerts",
+        description:
+            "Get immediate alerts whenever your email addresses, credit cards, or personal IDs are part of a data breach, so you can take action and keep your most sensitive info safe.",
+    },
+    {
+        icon: <TabletSmartphone />,
+        text: "Up to unlimited devices",
+        description: "You can use the VPN with your account on every device to browse the internet in the safest way possible.",
+    },
+    {
+        icon: <GlobeLock />,
+        text: "Personal data security reports",
+        description:
+            "Get regular reports on your personal data security (quarterly or yearly) and stay up-to-date with any potential breaches that may have impacted you.",
+    },
 ];
 
 export const checklistItems = [
-  {
-    title: "Code merge made easy",
-    description:
-      "Track the performance of your VR apps and gain insights into user behavior.",
-  },
-  {
-    title: "Review code without worry",
-    description:
-      "Track the performance of your VR apps and gain insights into user behavior.",
-  },
-  {
-    title: "AI Assistance to reduce time",
-    description:
-      "Track the performance of your VR apps and gain insights into user behavior.",
-  },
-  {
-    title: "Share work in minutes",
-    description:
-      "Track the performance of your VR apps and gain insights into user behavior.",
-  },
+    {
+        title: "Minimize public Wi-Fi risks",
+        description:
+            "Working from a cafe & switching mobile data to that free internet feels lovely. But public Wi-Fi is a blessing for hackers. Connect to a VPN and surf worry-free.",
+    },
+    {
+        title: "Access websites while traveling",
+        description:
+            "Watching your favorite movie while traveling is something to look forward to. But are you secure while doing that? Well, don’t worry. Let the VPN take care of it.",
+    },
+    {
+        title: "Escape price discrimination online",
+        description:
+            "The more you visit a website, the more likely you will spend money there. That’s why you stop getting those discounts. Connect to a VPN and get them back!",
+    },
 ];
 
 export const pricingOptions = [
-  {
-    title: "Free",
-    price: "$0",
-    features: [
-      "Private board sharing",
-      "5 Gb Storage",
-      "Web Analytics",
-      "Private Mode",
-    ],
-  },
-  {
-    title: "Pro",
-    price: "$10",
-    features: [
-      "Private board sharing",
-      "10 Gb Storage",
-      "Web Analytics (Advance)",
-      "Private Mode",
-    ],
-  },
-  {
-    title: "Enterprise",
-    price: "$200",
-    features: [
-      "Private board sharing",
-      "Unlimited Storage",
-      "High Performance Network",
-      "Private Mode",
-    ],
-  },
+    {
+        title: "Free",
+        price: "$0",
+        features: [
+            { name: "Up to 2 devices", included: true },
+            { name: "Ad Blocker", included: true },
+            { name: "Masked email generator", included: true },
+            { name: "24/7 Virus Protection", included: false },
+            { name: "Real-time email breach alerts", included: false },
+            { name: "Personal data security reports", included: false },
+        ],
+    },
+    {
+        title: "Pro",
+        price: "$2,14",
+        features: [
+            { name: "Up to 10 devices", included: true },
+            { name: "Ad Blocker", included: true },
+            { name: "Masked email generator", included: true },
+            { name: "24/7 Virus Protection", included: true },
+            { name: "Real-time email breach alerts", included: false },
+            { name: "Personal data security reports", included: false },
+        ],
+    },
+    {
+        title: "Enterprise",
+        price: "$3",
+        features: [
+            { name: "Unlimited devices", included: true },
+            { name: "Ad Blocker", included: true },
+            { name: "Masked email generator", included: true },
+            { name: "24/7 Virus Protection", included: true },
+            { name: "Real-time email breach alerts", included: true },
+            { name: "Personal data security reports", included: true },
+        ],
+    },
 ];
 
 export const resourcesLinks = [
-  { href: "#", text: "Getting Started" },
-  { href: "#", text: "Documentation" },
-  { href: "#", text: "Tutorials" },
-  { href: "#", text: "API Reference" },
-  { href: "#", text: "Community Forums" },
+    { href: "#", text: "Getting Started, What is a VPN?" },
+    { href: "#", text: "Why would I need a VPN?" },
+    { href: "#", text: "About Us" },
+    { href: "#", text: "Help Center" },
+    { href: "#", text: "Community Forums" },
 ];
 
 export const platformLinks = [
-  { href: "#", text: "Features" },
-  { href: "#", text: "Supported Devices" },
-  { href: "#", text: "System Requirements" },
-  { href: "#", text: "Downloads" },
-  { href: "#", text: "Release Notes" },
-];
-
-export const communityLinks = [
-  { href: "#", text: "Events" },
-  { href: "#", text: "Meetups" },
-  { href: "#", text: "Conferences" },
-  { href: "#", text: "Hackathons" },
-  { href: "#", text: "Jobs" },
+    { href: "#", text: "Features" },
+    { href: "#", text: "Supported Devices" },
+    { href: "#", text: "System Requirements" },
+    { href: "#", text: "Downloads" },
+    { href: "#", text: "Release Notes" },
 ];
