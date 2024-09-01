@@ -16,9 +16,9 @@ const FeatureSection = () => {
     useEffect(() => {
         const handleResize = () => {
             if (window.innerWidth < 640) {
-                setThreshold(0.1); // Use a lower threshold for mobile devices
+                setThreshold(0.1);
             } else {
-                setThreshold(0.3); // Use the default threshold for larger screens
+                setThreshold(0.3);
             }
         };
 
