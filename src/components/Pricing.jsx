@@ -1,13 +1,49 @@
 import { CheckCircle2, Ban } from "lucide-react";
 import { pricingOptions } from "../constants";
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+import { useEffect } from "react";
 
 const Pricing = () => {
+    const controls = useAnimation();
+    const { ref, inView } = useInView({
+        triggerOnce: true,
+        threshold: 0.2,
+    });
+
+    useEffect(() => {
+        if (inView) {
+            controls.start("visible");
+        }
+    }, [controls, inView]);
+
     return (
-        <div className="mt-20" id="pricing">
-            <h2 className="text-4xl sm:text-5xl lg:text-6xl text-center my-8 tracking-wide">Pricing</h2>
+        <div className="mt-20" id="pricing" ref={ref}>
+            <motion.h2
+                className="text-4xl sm:text-5xl lg:text-6xl text-center my-8 tracking-wide"
+                initial="hidden"
+                animate={controls}
+                variants={{
+                    hidden: { opacity: 0, y: -50 },
+                    visible: { opacity: 1, y: 0 },
+                }}
+                transition={{ duration: 0.8, ease: "easeOut" }}
+            >
+                Pricing
+            </motion.h2>
             <div className="flex flex-wrap">
                 {pricingOptions.map((option, index) => (
-                    <div key={index} className="w-full sm:w-1/2 lg:w-1/3 p-2">
+                    <motion.div
+                        key={index}
+                        className="w-full sm:w-1/2 lg:w-1/3 p-2"
+                        initial="hidden"
+                        animate={controls}
+                        variants={{
+                            hidden: { opacity: 0, scale: 0.8 },
+                            visible: { opacity: 1, scale: 1 },
+                        }}
+                        transition={{ duration: 0.6, delay: index * 0.2 }}
+                    >
                         <div className="p-10 border border-neutral-700 rounded-xl">
                             <p className="text-4xl mb-8">
                                 {option.title}
@@ -36,7 +72,7 @@ const Pricing = () => {
                                 Subscribe
                             </a>
                         </div>
-                    </div>
+                    </motion.div>
                 ))}
             </div>
         </div>
