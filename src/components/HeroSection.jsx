@@ -21,6 +21,7 @@ const HeroSection = () => {
                     animate={{ backgroundPosition: "100% 0%" }}
                     transition={{ duration: 2, ease: "easeInOut", repeat: Infinity, repeatType: "mirror" }}
                 >
+                    {" "}
                     SierraVPN
                 </motion.span>
             </motion.h1>
